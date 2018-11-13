@@ -17,7 +17,7 @@ import qualified Reflex.Dom.TextField as TxtField
 -- | A product type capturing both a checking function and a way to modify a 'TextField'
 -- such that it's attributes match the validation.
 --
--- For example, if a validation rule requrise that a text field parse as a number and
+-- For example, if a validation rule requires that a text field parse as a number and
 -- have a maximum value of 10, the validator can capture this rule while also setting
 -- the HTML input attributes that correspond to these rules (@type="number" max="10"@)
 data Validator t m a = Validator (Text -> Either Text a) (TextField t m -> TextField t m)
